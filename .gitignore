@@ -1,0 +1,12 @@
+.idea/
+*.iml
+*.iws
+
+# Node
+node_modules/
+npm-debug.log
+build/
+
+# Generated files
+src/js/properties/props.js
+

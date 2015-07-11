@@ -1,0 +1,32 @@
+[
+    {
+        "id": "employeeNum",
+        "displayName": "Employee Num"
+    },
+    {
+        "id": "firstName",
+        "displayName": "First"
+    },
+    {
+        "id": "lastName",
+        "displayName": "Last"
+    },
+    {
+        "id": "employeeType",
+        "displayName": "Type"
+    },
+    {
+        "id": "filingStatus",
+        "displayName": "W4 Status"
+    },
+    {
+        "id": "allowances",
+        "displayName": "W4 Allow."
+    }
+]
+
+    // "payRate": 20,
+    // "payType": "HOURLY",
+    // "state": "PENNSYLVANIA",
+    // "": 4,
+    // "city": "MT_LEBANON"

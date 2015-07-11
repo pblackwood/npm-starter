@@ -1,0 +1,438 @@
+@import '../../node_modules/bootstrap/less/bootstrap.less';
+
+body {
+	font-family: 'ProximaNova-Regular', Fallback Arial, sans-serif;
+	font-size: 10pt;
+	padding-top: 50px;
+	color: #454d4c;
+	background-color: #889988;
+}
+
+h1 {
+	color: #00759d;
+	font-size: 2.25em;
+}
+
+h2 {
+	color: #454d4c;
+	font-size: 1.5em;
+}
+
+h3 {
+	color: #000;
+	font-size: 1.5em;
+}
+
+// These are bootstrap's built-in media queries
+//@media (min-width: 768px) {
+//	.container {
+//		width: 750px;
+//	}
+//}
+//@media (min-width: 992px) {
+//	.container {
+//		width: 970px;
+//	}
+//}
+//@media (min-width: 1200px) {
+//	.container {
+//		width: 1170px;
+//	}
+//}
+// Adding one more for even bigger screens
+@media (min-width: 1400px) {
+	.container {
+		width: 1290px;
+	}
+}
+
+.container {
+	padding: 0;
+}
+
+.navbar {
+	background-color: #4A4F4E;
+	border: 0;
+}
+.navbar-right {
+	margin-right: 0;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #888888;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #eeeeee;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	background-color: #f8fcf8;
+	color: #777777;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: #eeeeee;
+}
+
+.payroll {
+	.container {
+		padding: 15px 30px;
+		background-color: #f8fcf8;
+		min-height: 2000px;
+	}
+}
+
+.btn-toolbar {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.editor-window {
+	padding: 0px;
+}
+
+.editor-status-bar {
+	background-color: red;
+	padding: 5px;
+}
+
+.editor-status-bar .file-name {
+	background-color: yellow;
+	padding: 5px;
+}
+
+.editor-status-bar .tool-bar {
+	background-color: salmon;
+	padding: 5px;
+}
+
+.editor-split-pane {
+	background-color: green;
+	padding: 5px;
+}
+
+.editor-split-pane .tree-pane {
+	background-color: #67b168;
+	padding: 5px;
+}
+
+.editor-split-pane .content-pane {
+	background-color: #A0A000;
+	padding: 5px;
+}
+
+div.prop-text {
+	.prop-display {
+		color: #222222;
+		padding: 1px;
+	}
+}
+
+div.prop-text.prop-selected {
+	.prop-display {
+		padding: 0px;
+		background-color: lightyellow;
+		border: dashed cadetblue 1px;
+	}
+}
+
+.markdown-editor {
+	textarea {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	button {
+		margin-right: 2px;
+	}
+}
+
+p.jsonCode {
+	font-size: 10pt;
+}
+
+.simple-text-editor {
+	button {
+		margin-right: 2px;
+	}
+}
+
+.simple-text-editor {
+	button {
+		margin-right: 2px;
+	}
+}
+
+.button-bar-top {
+	background-color: #222222;
+	margin-left: -16px;
+	margin-right: -16px;
+	margin-top: -1px;
+	padding-left: 16px;
+}
+
+.add-prop, .add-props, .add-props2d, .add-category {
+	width: 110px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+
+.editor-list {
+	margin-top: -15px;
+}
+
+#employee-table {
+	font-size: 10pt;
+	margin-top: 20px;
+}
+
+.company-blurb {
+	margin-top: 0px;
+
+	.form-group {
+		margin-bottom: 0px;
+	}
+
+	.control-label {
+		padding-top: 8px;
+		padding-bottom: 6px;
+		margin-bottom: 1px;
+		margin-top: 2px;
+	}
+	.blurb-value {
+		padding: 8px 7px 6px 7px;
+		margin-bottom: 1px;
+		margin-top: 2px;
+		background-color: #e8f8e8;
+		color: #454d4c;
+		border-radius: 2px;
+	}
+}
+
+.reactabular {
+	th:hover {
+		background-color: #E7E7E7;
+		color: #00759D;
+		cursor: pointer;
+	}
+
+	th.sort-asc {
+		color: #00759D;
+	}
+
+	th.sort-asc:after {
+		padding-left: 0.75em;
+		content: '\25B2';
+		font-size: 0.75em;
+		color: #00759D;
+	}
+
+	th.sort-desc {
+		color: #00759D;
+	}
+
+	th.sort-desc:after {
+		padding-left: 0.75em;
+		content: '\25BC';
+		font-size: 0.75em;
+		color: #00759D;
+	}
+}
+
+.form-group .form-constant {
+	text-align: left;
+}
+
+.btn {
+	color: #444444;
+	border: 1px solid #444444;
+}
+
+li.payroll-summary {
+	list-style-type: none;
+	.panel-title {
+		a {
+			text-decoration: none;
+		}
+		a:hover {
+			color: #449944;
+		}
+	}
+}
+
+.timesheet-view {
+	padding: 5px 15px;
+
+	.expanded {
+		.panel-heading {
+			a {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.collapsed {
+		.panel-heading {
+			a {
+				font-weight: normal;
+			}
+		}
+	}
+
+	.employees {
+		padding-left: 15px;
+		padding-right: 15px;
+		li.employee-summary, li.timesheet-summary, li.add-timesheet {
+			list-style-type: none;
+			padding-left: 0px;
+			padding-right: 15px;
+			.panel-title {
+				font-size: small;
+				a {
+					text-decoration: none;
+				}
+				a:hover {
+					color: #444499;
+				}
+			}
+		}
+
+		.add-timesheet-button {
+			margin-left: 5px;
+		}
+
+		li.employee-summary {
+			.expanded {
+				.panel-title {
+					a {
+						color: darkgreen;
+						font-weight: bold;
+					}
+				}
+				.timesheet-summaries {
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+}
+
+.timesheet-heading {
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+li.payroll-summary.selected {
+	.panel-title {
+		a {
+			color: #449944;
+			font-weight: bold;
+		}
+	}
+}
+
+.timeentry-list {
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-bottom: 20px;
+	padding: 0px 20px;
+	height: 75px;
+}
+
+.timeentry {
+	height: 100%;
+	max-width: 100px;
+	background-color: #f8fff8;
+	text-align: center;
+	padding-top: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	border-left: 1px solid yellowgreen;
+	border-top: 1px solid yellowgreen;
+	border-bottom: 1px solid yellowgreen;
+	.timeentry-hours {
+		margin-top: 10px;
+		text-align: center;
+		cursor: pointer;
+	}
+	.timeentry-input {
+		input {
+			height: 20px;
+			line-height: 12pt;
+			margin-top: 8px;
+			padding-left: 8px;
+			padding-left: 8px;
+		}
+
+	}
+}
+
+.timeentry.first {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.timeentry.last {
+	border-right: 1px solid yellowgreen;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.timesheet-form {
+	.modal-header {
+		background-color: #e8efe8;
+		h4 {
+			font-weight: bold;
+		}
+	}
+	.modal-body {
+		background-color: #fcfffc;
+	}
+	.modal-footer {
+		background-color: #e8efe8;
+	}
+}
+
+.timesheet-status {
+	display: inline;
+	margin-left: 10px;
+	padding: 3px 6px;
+	border: 1px solid #686868;
+	border-radius: 2px;
+	&.approved, &.paid {
+		color: #152e0b;
+		background-color: #71b96f;
+	}
+	&.edited, &.submitted {
+		color: #7d0000;
+		background-color: #cccb3c;
+	}
+	&.rejected {
+		color: #cccb3c;
+		background-color: #88161d;
+	}
+	&.new, &.deleted {
+		color: #554455;
+		background-color: #eeeeee;
+	}
+}
+
+.timesheet-toolbar {
+	margin-left: 10px;
+	.small-button-reject {
+		.glyphicon {
+			top: 2px;
+		}
+	}
+	.small-button-delete {
+		.glyphicon {
+			color: white;
+			font-size: 8pt;
+			font-weight: bold;
+			top: 1px;
+		}
+	}
+}
+
